@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="list_item_title">#333333</color>
+    <color name="list_background">#F5FFFA</color>
+    <color name="black_transparent">#80444444</color>
+    <color name="black_transparent1">#09444444</color>
+    <color name="white_transparent">#5cffffff</color>
+    <color name="list_background_pressed">#FEAFB2</color>
+    <color name="list_divider">#272727</color>
+    <color name="counter_text_bg">#626262</color>
+    <color name="counter_text_color">#c5c4c4</color>
+    <color name="grey_color">#C9C9C9</color>
+
+    <color name="white">#ffffff</color>
+    <color name="red_update">#E93F52</color>
+
+    <color name="text_color_black">#212121</color>
+    <color name="edit_text_color">#212121</color>
+    <color name="edit_text_color1">#626262</color>
+    <color name="text_color_blue">#1B91E0</color>
+    <color name="text_color_blue1">#282828</color>
+    <color name="text_color_drawer">#1B91E0</color>
+    <color name="red">#ff0000</color>
+    <color name="light_red">#E93E53</color>
+    <color name="green">#00ff00</color>
+    <color name="theme1">#ff6666</color>
+    <color name="theme">#1B91DF</color>
+    <color name="dark_green2">#448c5c</color>
+    <color name="dark_green">#001B91E0</color>
+    <color name="dark_green1">#1B91E0</color>
+    <color name="stroke">#000</color>
+    <color name="grey_dark">#817f7f</color>
+    <color name="grey_light">#ddd</color>
+    <color name="hint_text_color">#f1817f7f</color>
+    <color name="hint_text_color1">#e6e6e6</color>
+    <color name="skyblue">#ff006699</color>
+    <color name="normal">#333333</color>
+    <color name="parrot_green">#4BD763</color>
+    <color name="dark_red">#ffff0000</color>
+    <color name="light_gray">#24999999</color>
+    <color name="light_gray2">#79c4c4c4</color>
+    <color name="green_text">#427609</color>
+    <color name="black_dark">#000000</color>
+    <color name="black_light">#444444</color>
+    <color name="view_trip_detail">#BABABA</color>
+    <color name="color_call">#6fdd3a</color>
+
+  <!--  <color name="blue_color">#1B305E</color>
+<color name="yellow_color">#D0E100</color>
+
+
+    <color name="header_back_button">#D0E100</color>
+    <color name="header_background">#1B305E</color>
+    <color name="header_text_color">#FFFFFF</color>
+
+
+    <color name="bottom_botton_back_color">#D0E100</color>
+    <color name="bottom_botton_text_color">#1B305E</color>
+
+    <color name="bt_black">#001129</color>
+    <color name="user_name_text">#939393</color>
+    <color name="black_transparent_2">#26444444</color>-->
+    <color name="blue_color">#282828</color>
+    <color name="yellow_color">#FCE303</color>
+
+
+    <color name="header_back_button">#FCE303</color>
+    <color name="header_background">#282828</color>
+    <color name="header_text_color">#FFFFFF</color>
+
+
+    <color name="bottom_botton_back_color">#FCE303</color>
+    <color name="bottom_botton_text_color">#CECECE</color>
+
+    <color name="bt_black">#001129</color>
+    <color name="user_name_text">#939393</color>
+    <color name="black_transparent_2">#26444444</color>
+</resources>

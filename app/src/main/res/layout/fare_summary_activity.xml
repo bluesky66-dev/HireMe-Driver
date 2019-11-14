@@ -1,0 +1,763 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg">
+
+    <!--         android:background="@drawable/register"
+     -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/tripempty"
+        android:layout_toRightOf="@+id/tripempty">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <RelativeLayout
+                android:id="@+id/relative_root_one_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blue_color"
+                android:paddingBottom="0dp">
+
+                <Button
+                    android:id="@+id/cancelfarereview"
+                    style="@style/Back_button_Style"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="0dp" />
+
+                <com.custom.BTextView
+                    android:id="@+id/farereview"
+                    style="@style/Header_Style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/Fare_Summary"
+                    android:textAllCaps="true"
+                    android:visibility="visible"
+                    app:btextfont="@string/RobotoCondensed" />
+
+            </RelativeLayout>
+
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.MapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:clickable="false" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/view_trip_detail" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp">
+
+                    <LinearLayout
+                        android:id="@+id/pickup8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <com.custom.BTextView
+                            app:btextfont="@string/RobotoCondensed"
+                            android:id="@+id/tripidtext"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/Trip_id"
+                            android:textColor="@color/text_color_blue1"
+                            android:textSize="16sp" />
+
+                        <com.custom.BTextView
+                            app:btextfont="@string/RobotoCondensed"
+                            android:id="@+id/tripid"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:gravity="right"
+                            android:text="1263"
+                            android:ems="10"
+                            android:enabled="false"
+                            android:textColor="#000000"
+                            android:textSize="16sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/pickup9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/pickup8"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <com.custom.BTextView
+                            app:btextfont="@string/RobotoCondensed"
+                            android:id="@+id/driveridtext"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/Driver_ID"
+                            android:textColor="@color/text_color_blue1"
+                            android:textSize="15sp" />
+
+                        <com.custom.BTextView
+                            app:btextfont="@string/RobotoCondensed"
+                            android:id="@+id/driverid"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:gravity="right"
+                            android:text="1032"
+                            android:ems="10"
+                            android:enabled="false"
+                            android:textColor="#000000"
+                            android:textSize="16sp"/>
+                    </LinearLayout>
+
+                    <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_toRightOf="@+id/car_route"-->
+                    <!--android:orientation="vertical">-->
+
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/tripid"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="@string/Medium_Text"-->
+                    <!--android:textColor="@color/blue_color"-->
+                    <!--android:textSize="@dimen/text_trip_detail" />-->
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/driverid"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="5dp"-->
+                    <!--android:text="@string/Medium_Text"-->
+                    <!--android:textColor="@color/blue_color"-->
+                    <!--android:textSize="@dimen/text_trip_detail" />-->
+
+
+                    <!--</LinearLayout>-->
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/view_trip_detail" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <ImageView
+                        android:id="@+id/car_icon"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/suv" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toRightOf="@+id/car_icon"
+                        android:orientation="vertical">
+
+                        <com.custom.BTextView
+                            app:btextfont="@string/RobotoCondensed"
+                            android:id="@+id/date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/date"
+                            android:textAllCaps="true"
+                            android:textColor="@color/black_dark"
+                            android:textSize="17sp" />
+                        <!--   android:layout_marginTop="10dp"-->
+                        <com.custom.BTextView
+                            app:btextfont="@string/RobotoCondensed"
+                            android:id="@+id/car_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Medium_Text"
+                            android:textColor="@color/blue_color"
+                            android:textSize="@dimen/text_trip_detail" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/view_trip_detail" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp">
+
+                    <com.driver.hire_me.CircularImageView
+                        android:id="@+id/icon"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/circleuser"
+                        android:scaleType="centerCrop" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/icon"
+                        android:orientation="vertical">
+
+                        <com.custom.BTextView
+                            app:btextfont="@string/RobotoCondensed"
+                            android:id="@+id/detailname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/rider_name"
+                            android:textColor="@color/theme"
+                            android:textSize="17sp"
+                            android:visibility="gone" />
+
+                        <com.custom.BTextView
+                            app:btextfont="@string/RobotoCondensed"
+                            android:id="@+id/name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Medium_Text"
+                            android:textColor="@color/blue_color"
+                            android:textSize="@dimen/text_size_large" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/view_trip_detail" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp">
+
+                    <ImageView
+                        android:id="@+id/car_route1"
+                        android:layout_width="40dp"
+                        android:layout_height="70dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/route" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/car_route1"
+                        android:orientation="vertical">
+
+                        <com.custom.BTextView
+                            app:btextfont="@string/RobotoCondensed"
+                            android:id="@+id/detaildrop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/drop"
+                            android:textColor="@color/theme"
+                            android:textSize="17sp"
+                            android:visibility="gone" />
+
+                        <com.custom.BTextView
+                            app:btextfont="@string/RobotoCondensed"
+                            android:id="@+id/droploc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Medium_Text"
+                            android:textColor="@color/blue_color"
+                            android:textSize="@dimen/text_trip_detail" />
+
+                        <com.custom.BTextView
+                            app:btextfont="@string/RobotoCondensed"
+                            android:id="@+id/detailpickup"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/pickup"
+                            android:textColor="@color/theme"
+                            android:textSize="17sp"
+                            android:visibility="gone" />
+
+                        <com.custom.BTextView
+                            app:btextfont="@string/RobotoCondensed"
+                            android:id="@+id/pickuploc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/Medium_Text"
+                            android:textColor="@color/blue_color"
+                            android:textSize="@dimen/text_trip_detail" />
+
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/view_trip_detail" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp">
+
+                    <ImageView
+                        android:id="@+id/distanceimg"
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/distance" />
+
+                    <com.custom.BTextView
+                        app:btextfont="@string/RobotoCondensed"
+                        android:id="@+id/detaildistance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignTop="@+id/detaildistance1"
+                        android:layout_marginLeft="25dp"
+                        android:text="@string/distance"
+                        android:textColor="@color/theme"
+                        android:textSize="17sp"
+                        android:visibility="gone" />
+
+                    <com.custom.BTextView
+                        app:btextfont="@string/RobotoCondensed"
+                        android:id="@+id/distance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/timestamp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/distanceimg"
+                        android:text="@string/Medium_Text"
+                        android:textColor="@color/blue_color"
+                        android:textSize="@dimen/text_trip_detail" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/view_trip_detail" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <ImageView
+                        android:id="@+id/amountimg"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:src="@drawable/amount" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toRightOf="@+id/amountimg"
+                        android:orientation="vertical">
+
+                        <com.custom.BTextView
+                            android:id="@+id/detailamount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/theme"
+                            android:textSize="17sp"
+                            android:visibility="gone"
+                            app:btextfont="@string/RobotoCondensed" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <com.custom.BTextView
+                                android:id="@+id/fare_amount_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="@string/fare_amount"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="#222222"
+                                android:textSize="16sp"
+                                app:btextfont="@string/RobotoCondensed" />
+
+
+                            <com.custom.BTextView
+                                android:id="@+id/amount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginTop="10dp"
+                                android:gravity="end"
+                                android:text="@string/_1800_80"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="#222222"
+                                android:textSize="16sp"
+                                app:btextfont="@string/RobotoCondensed" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <com.custom.BTextView
+                                android:id="@+id/tax_amount_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="@string/Tax"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="#222222"
+                                android:textSize="16sp"
+                                app:btextfont="@string/RobotoCondensed" />
+
+
+                            <com.custom.BTextView
+                                android:id="@+id/tax_amount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginTop="10dp"
+                                android:gravity="end"
+                                android:text="@string/_1800_80"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="#222222"
+                                android:textSize="16sp"
+                                app:btextfont="@string/RobotoCondensed" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <com.custom.BTextView
+                                android:id="@+id/promo_amount_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="@string/promo_amount"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="#222222"
+                                android:textSize="16sp"
+                                app:btextfont="@string/RobotoCondensed" />
+
+                            <com.custom.BTextView
+                                android:id="@+id/promo_amount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginTop="10dp"
+                                android:gravity="end"
+                                android:text="@string/_1800_80"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="#222222"
+                                android:textSize="16sp"
+                                app:btextfont="@string/RobotoCondensed" />
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <com.custom.BTextView
+                                android:id="@+id/total_amount_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="@string/amount_paid"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="#222222"
+                                android:textSize="16sp"
+                                app:btextfont="@string/RobotoCondensed" />
+
+
+                            <com.custom.BTextView
+                                android:id="@+id/total_amount"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginTop="10dp"
+                                android:gravity="end"
+                                android:text="@string/_1800_80"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:textColor="#222222"
+                                android:textSize="16sp"
+                                app:btextfont="@string/RobotoCondensed" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                    <!--<com.custom.BTextView-->
+                    <!--android:id="@+id/detailname"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:layout_marginLeft="25dp"-->
+                    <!--android:layout_marginTop="80dp"-->
+                    <!--android:text="@string/rider_name"-->
+                    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                    <!--android:textColor="@color/theme"-->
+                    <!--android:textSize="17sp"-->
+
+                    <!--app:btextfont="@string/SFUIDisplay_Regular" />-->
+
+                    <!--<com.custom.BTextView-->
+                    <!--android:id="@+id/name"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_alignTop="@+id/detailname"-->
+                    <!--android:layout_marginLeft="140dp"-->
+                    <!--android:layout_marginRight="5dp"-->
+                    <!--android:layout_marginTop="0dp"-->
+                    <!--android:text="@string/Medium_Text"-->
+                    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                    <!--android:textColor="#222222"-->
+                    <!--android:textSize="16sp"-->
+                    <!--app:btextfont="@string/SFUIDisplay_Regular" />-->
+
+                    <!--<com.custom.BTextView-->
+                    <!--android:id="@+id/detailpickup"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignLeft="@+id/detailpickup1"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:layout_alignTop="@+id/detailpickup1"-->
+                    <!--android:layout_below="@+id/detailname"-->
+                    <!--android:layout_marginLeft="25dp"-->
+                    <!--android:text="@string/pickup"-->
+                    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                    <!--android:textColor="@color/theme"-->
+                    <!--android:textSize="17sp"-->
+                    <!--app:btextfont="@string/SFUIDisplay_Regular" />-->
+
+                    <!--<com.custom.BTextView-->
+                    <!--android:id="@+id/detailpickup1"-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_below="@+id/name"-->
+                    <!--android:layout_marginLeft="140dp"-->
+                    <!--android:layout_marginRight="5dp"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:text="@string/Medium_Text"-->
+                    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                    <!--android:textColor="#222222"-->
+                    <!--android:textSize="16sp"-->
+                    <!--app:btextfont="@string/SFUIDisplay_Regular" />-->
+
+                    <!--<com.custom.BTextView-->
+                    <!--android:id="@+id/detaildrop"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:layout_alignTop="@+id/detaildrop1"-->
+                    <!--android:layout_below="@+id/detailpickup"-->
+                    <!--android:layout_marginLeft="25dp"-->
+                    <!--android:text="@string/drop"-->
+                    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+
+                    <!--android:textColor="@color/theme"-->
+                    <!--app:btextfont="@string/SFUIDisplay_Regular" />-->
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/detaildrop1"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_below="@+id/detailpickup1"-->
+                    <!--android:layout_marginLeft="140dp"-->
+                    <!--android:layout_marginRight="5dp"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:text="@string/Medium_Text"-->
+                    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                    <!--android:textColor="#222222"-->
+                    <!--android:textSize="16sp" />-->
+
+                    <!--<com.custom.BTextView-->
+                    <!--android:id="@+id/detaildate"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:layout_alignTop="@+id/timestamp"-->
+                    <!--android:layout_below="@+id/detaildrop"-->
+                    <!--android:layout_marginLeft="25dp"-->
+                    <!--android:text="@string/date"-->
+                    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                    <!--android:textColor="@color/theme"-->
+                    <!--android:textSize="17sp"-->
+                    <!--app:btextfont="@string/SFUIDisplay_Regular" />-->
+                    <!--&lt;!&ndash;   android:layout_marginTop="10dp"&ndash;&gt;-->
+                    <!--<com.custom.BTextView-->
+                    <!--android:id="@+id/timestamp"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_below="@+id/detaildrop1"-->
+                    <!--android:layout_marginLeft="140dp"-->
+                    <!--android:layout_marginRight="5dp"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:text="@string/Medium_Text"-->
+                    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                    <!--android:textColor="#222222"-->
+                    <!--android:textSize="16sp"-->
+                    <!--app:btextfont="@string/SFUIDisplay_Regular" />-->
+
+                    <!--<com.custom.BTextView-->
+                    <!--android:id="@+id/detaildistance"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:layout_alignTop="@+id/detaildistance1"-->
+                    <!--android:layout_below="@+id/detaildate"-->
+                    <!--android:layout_marginLeft="25dp"-->
+                    <!--android:text="@string/distance"-->
+                    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                    <!--android:textColor="@color/theme"-->
+                    <!--android:textSize="17sp"-->
+                    <!--app:btextfont="@string/SFUIDisplay_Regular" />-->
+
+                    <!--<com.custom.BTextView-->
+                    <!--android:id="@+id/detaildistance1"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_below="@+id/timestamp"-->
+                    <!--android:layout_marginLeft="140dp"-->
+                    <!--android:layout_marginRight="5dp"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:text="@string/Medium_Text"-->
+                    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                    <!--android:textColor="#222222"-->
+                    <!--android:textSize="16sp"-->
+                    <!--app:btextfont="@string/SFUIDisplay_Regular" />-->
+
+                    <!--<com.custom.BTextView-->
+                    <!--android:id="@+id/detailamount"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:layout_alignTop="@+id/amount"-->
+                    <!--android:layout_below="@+id/detaildistance"-->
+                    <!--android:layout_marginLeft="25dp"-->
+                    <!--android:text="@string/amount"-->
+                    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                    <!--android:textColor="@color/theme"-->
+                    <!--android:textSize="17sp"-->
+                    <!--app:btextfont="@string/SFUIDisplay_Regular" />-->
+
+                    <!--<com.custom.BTextView-->
+                    <!--android:id="@+id/amount"-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_below="@+id/detaildistance1"-->
+                    <!--android:layout_marginLeft="140dp"-->
+                    <!--android:layout_marginRight="5dp"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:text="@string/Medium_Text"-->
+                    <!--android:textAppearance="?android:attr/textAppearanceMedium"-->
+                    <!--android:textColor="#222222"-->
+                    <!--android:textSize="16sp"-->
+                    <!--app:btextfont="@string/SFUIDisplay_Regular" />-->
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/view_trip_detail" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

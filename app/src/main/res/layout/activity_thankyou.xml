@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_thankyou"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <com.custom.BTextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/facebookbns"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/feedback"
+        android:textAllCaps="true"
+        android:textColor="@color/blue_color"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:btextfont="@string/RobotoCondensed" />
+
+    <com.custom.BTextView
+        android:id="@+id/submit_but"
+        style="@style/Bottom_button_Style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="@string/submit"
+        android:textAllCaps="true"
+        android:textColor="@color/blue_color"
+        android:textStyle="bold"
+        app:btextfont="@string/buttom_fonts" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.custom.BTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:text="@string/thanks_for"
+            android:textAllCaps="true"
+            android:textColor="@color/blue_color"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:btextfont="@string/RobotoCondensed" />
+
+        <com.custom.BTextView
+            android:id="@+id/BTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="@string/driving_with_free_bree"
+            android:textAllCaps="true"
+            android:textColor="@color/yellow_color"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:btextfont="@string/RobotoCondensed" />
+
+        <com.custom.BTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="@string/please_rate_your_feedback_below"
+            android:textAllCaps="true"
+            android:textColor="@color/blue_color"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:btextfont="@string/RobotoCondensed" />
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <com.custom.BTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/add_a_note_optional"
+            android:textAllCaps="true"
+            android:textColor="@color/blue_color"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:btextfont="@string/RobotoCondensed" />
+
+        <RelativeLayout
+            android:id="@+id/picup_button"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="bottom|center"
+            android:layout_marginTop="5dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:rotation="30"
+                android:src="@drawable/hexagon_shape" />
+
+            <com.custom.BTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/add_nnote"
+                android:textColor="@color/blue_color"
+                android:textSize="16sp"
+                app:btextfont="@string/RobotoCondensed" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

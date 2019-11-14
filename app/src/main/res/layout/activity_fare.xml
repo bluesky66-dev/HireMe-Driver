@@ -1,0 +1,162 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.driver.hire_me.FareActivity">
+
+    <TextView
+        android:id="@+id/faretitle"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@color/theme"
+        android:gravity="center"
+        android:text="@string/Fare_Summary"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:id="@+id/faredetails"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginTop="40dp"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="@string/Amount_be_paid"
+            android:textColor="@color/theme"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/douler"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="50dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/faredetails"
+        android:layout_marginTop="20dp"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <RatingBar
+            android:id="@+id/ratingBar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/star_rate_rider"
+            android:textColor="@color/theme"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/updatesubmerchant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/update_submerchant"
+            android:textColor="#0000ff"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/farereview"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/layout1"
+            android:text="@string/Fare_Review"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <!--
+          <EditText
+              android:id="@+id/feedback"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:ems="10"
+              android:hint="Leave your command"
+              android:inputType="textMultiLine"
+              android:gravity="center">
+
+              <requestFocus />
+          </EditText>
+        -->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttondetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp">
+
+        <Button
+            android:id="@+id/map"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/layout1"
+            android:text="@string/Go_Map"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/offline"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/layout1"
+            android:text="@string/Go_Offline"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    tools:context="com.driver.hire_me.Myreview">
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ratingBar1"
+        android:layout_below="@+id/ratingBar1"
+        android:layout_marginLeft="92dp"
+        android:layout_marginTop="66dp"
+        android:text="@string/submit"
+        android:visibility="gone" />
+
+    <RatingBar
+        android:id="@+id/ratingBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/top_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        android:isIndicator="true"
+        android:rating="5"
+        android:theme="@style/RatingBar" />
+
+    <com.custom.BTextView
+        android:id="@+id/rating_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ratingBar1"
+        android:layout_marginTop="5dp"
+        app:btextfont="@string/RobotoCondensed"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Rating Count :" />
+
+    <com.custom.BTextView
+        android:id="@+id/rating_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ratingBar1"
+        android:layout_marginTop="5dp"
+        app:btextfont="@string/RobotoCondensed"
+        android:layout_toRightOf="@+id/rating_text"
+        android:layout_toEndOf="@+id/rating_text"/>
+
+
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/button1"
+        android:layout_toRightOf="@+id/button1"
+        android:background="@color/blue_color">
+
+        <Button
+            android:id="@+id/back_btn"
+            style="@style/Back_button_Style"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp" />
+
+        <com.custom.BTextView
+            android:id="@+id/tv_rating"
+            style="@style/Header_Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/rating"
+            android:textAllCaps="true"
+            app:btextfont="@string/RobotoCondensed" />
+
+    </RelativeLayout>
+</RelativeLayout>

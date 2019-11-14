@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">GrepixUtils</string>
+    <string name="exit">Exit</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="required">Required</string>
+    <string name="please_check_network">please check network</string>
+    <string name="please_enter_your_First_Name">Please enter your First Name</string>
+    <string name="please_enter_your_last_Name">Please enter your Last Name</string>
+    <string name="please_enter_your_valid_number">Enter valid mobile number</string>
+    <string name="Old_Password">OLD PASSWORD</string>
+    <string name="please_enter_your_valid_email_id">Please enter your vaild mail id</string>
+    <string name="Password_should_be_at_least_4_char">Password should be at least 6 char</string>
+    <string name="password_not_matched">Password not Matched</string>
+    <string name="old_Password_is_not_currect">Old Password is not currect</string>
+    <string name="enter_new_password">Enter new Password</string>
+    <string name="enter_new_confirmed">Enter new confirmed</string>
+    <string name="new_Password_doesnt_match">New Password does not match</string>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppCompatAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/blue_color</item>
+        <item name="android:textColorPrimary">@color/dark_green</item>
+        <item name="android:textStyle">bold</item>
+        <item name="windowNoTitle">false</item>
+        <item name="android:background">#fff</item>
+    </style>
+
+
+</resources>

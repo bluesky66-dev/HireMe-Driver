@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    tools:context="com.driver.hire_me.Myreview">
+
+    <com.view.XListView
+        android:id="@+id/xListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/top_layout"
+        android:layout_marginTop="0dp"
+        android:cacheColorHint="#00000000">
+    </com.view.XListView>
+
+    <!-- <android.support.v4.widget.SwipeRefreshLayout
+         xmlns:android="http://schemas.android.com/apk/res/android"
+         android:id="@+id/swiperefresh"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+
+         &lt;!&ndash; android:id="@+id/listhistory"&ndash;&gt;
+     <ListView
+
+         android:id="@+id/listhistory"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentStart="true"
+         android:layout_alignParentRight="true"
+         android:layout_alignParentEnd="true"
+         android:layout_alignParentBottom="true"
+         android:layout_below="@+id/textView14"
+
+         android:layout_marginTop="0dp"
+         android:background="#F5FFFA">
+
+     </ListView>
+
+     </android.support.v4.widget.SwipeRefreshLayout>-->
+
+    <TextView
+        android:id="@+id/listempty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/listempty"
+        android:textColor="#FEABAF"
+        android:textSize="20dp"
+        android:visibility="gone" />
+
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_color">
+
+        <Button
+            android:id="@+id/recancel"
+            style="@style/Back_button_Style"
+            android:layout_alignBaseline="@+id/textView14"
+            android:layout_alignBottom="@+id/textView14"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp" />
+
+        <com.custom.BTextView
+            app:btextfont="@string/RobotoCondensed"
+            android:id="@+id/textView14"
+            style="@style/Header_Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/Trip_History"
+            android:textAllCaps="true" />
+
+    </RelativeLayout>
+</RelativeLayout>

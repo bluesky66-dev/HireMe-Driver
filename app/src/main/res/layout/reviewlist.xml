@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/revi"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <!--
+    <com.driver.hire_me.CircularImageView
+        android:id="@+id/icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+		android:padding="0dp"
+        android:src="@drawable/circleuser"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/circleuser" />
+
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/icon"
+            android:layout_marginLeft="30dp"
+            android:text="Name"
+            android:layout_marginTop="0dp"
+            android:textColor="@color/blue_color"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+
+             />
+
+    <TextView
+        android:id="@+id/timestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/icon"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="37dp"
+        android:text="Trip time"
+        android:textSize="@dimen/text_size_small"
+        android:textColor="@color/blue_color"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+
+       />
+    <TextView
+        android:id="@+id/amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amount"
+        android:textSize="@dimen/text_size_small"
+        android:layout_marginTop="37dp"
+        android:layout_alignTop="@+id/name"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/blue_color"/>
+-->
+
+    <!-- <RatingBar
+         android:id="@+id/rating"
+         style="?android:attr/ratingBarStyleSmall"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/item"
+         android:layout_marginLeft="30dp"
+         android:layout_marginTop="10dp"
+          android:layout_toRightOf="@+id/icon"
+         android:clickable="false"
+         android:longClickable="false"
+         android:isIndicator="true"
+         android:minWidth="30dp"
+         android:numStars="5"
+         android:rating="5"
+
+         android:stepSize="0.5" />-->
+
+    <!--         <ImageView
+      android:id="@+id/imageView10"
+      android:layout_width="fill_parent"
+      android:layout_height="2dp"
+      android:layout_below="@+id/rating"
+      android:layout_marginTop="20dp"
+
+      android:layout_toRightOf="@+id/edpprofileimage"
+      android:background="@drawable/hr_line" />
+-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_header">
+
+        <com.custom.BTextView
+            android:id="@+id/amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Amt:"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/blue_color"
+            android:textSize="14sp"
+            android:visibility="gone"
+            app:btextfont="@string/RobotoCondensed" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/car_icon"
+                android:layout_width="50sp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/suv" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toLeftOf="@+id/amount2"
+                android:layout_toRightOf="@+id/car_icon"
+                android:orientation="vertical">
+
+                <com.custom.BTextView
+                    android:id="@+id/timestamp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_20_00_0000"
+                    android:textColor="@color/blue_color"
+                    android:textSize="15sp"
+                    android:textAllCaps="true"
+                    app:btextfont="@string/RobotoCondensed" />
+
+                <com.custom.BTextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/name"
+                    android:textColor="@color/blue_color"
+                    android:visibility="gone"
+                    app:btextfont="@string/RobotoCondensed" />
+
+                <com.custom.BTextView
+                    android:id="@+id/car_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text=""
+                    android:textColor="@color/blue_color"
+                    android:textSize="12sp"
+                    app:btextfont="@string/RobotoCondensed" />
+            </LinearLayout>
+
+            <com.custom.BTextView
+                android:id="@+id/total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="5dp"
+                android:gravity="right"
+                android:text="@string/_45_898"
+                android:textAllCaps="true"
+                android:textColor="@color/blue_color"
+                android:textSize="15sp"
+                app:btextfont="@string/RobotoCondensed" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="-15dp">
+
+            <ImageView
+                android:id="@+id/car_route"
+                android:layout_width="40sp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/route" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toLeftOf="@+id/icon"
+                android:layout_toRightOf="@+id/car_route"
+                android:orientation="vertical">
+
+                <com.custom.BTextView
+                    android:id="@+id/drop_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="New Delhi, Kalkaji"
+                    android:layout_marginBottom="4dp"
+                    android:textColor="@color/blue_color"
+                    android:textSize="15sp"
+                    app:btextfont="@string/RobotoCondensed" />
+
+                <com.custom.BTextView
+                    android:id="@+id/pickup_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:singleLine="true"
+                    android:text="J-91, Kalkaji, New Delhi"
+                    android:textColor="@color/blue_color"
+                    android:textSize="15sp"
+                    app:btextfont="@string/RobotoCondensed" />
+            </LinearLayout>
+
+            <com.driver.hire_me.CircularImageView
+                android:id="@+id/icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/circleuser"
+                android:scaleType="centerCrop" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

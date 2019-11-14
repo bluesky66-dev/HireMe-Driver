@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:map="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relative_root_one_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_color"
+        android:paddingBottom="0dp">
+
+        <Button
+            android:id="@+id/back_btn"
+            style="@style/Back_button_Style"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="0dp" />
+
+        <com.custom.BTextView
+            android:id="@+id/tv_driver_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/edit_profile"
+            style="@style/Header_Style"
+            android:textAllCaps="true"
+            android:visibility="visible"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            app:btextfont="@string/RobotoCondensed" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relative_root_one_id"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:id="@+id/relative_root"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="0dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/linear_root_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="60dp"
+                android:orientation="vertical">
+
+
+                <com.custom.BTextView
+                    android:id="@+id/emailadd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:layout_marginTop="60dp"
+                    android:textColor="@color/bt_black"
+                    app:btextfont="@string/RobotoCondensed" />
+
+                <com.custom.BTextView
+                    android:id="@+id/tv_upload_documents"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/Upload_Documents"
+                    android:textColor="@color/blue_color"
+                    android:textSize="15sp"
+                    app:btextfont="@string/RobotoCondensed" />
+
+                <com.custom.BEditText
+                    android:id="@+id/firstname1"
+                    style="@style/EditTextStyle_Style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_bottom"
+                    android:layout_marginLeft="@dimen/button_margin"
+                    android:layout_marginRight="@dimen/button_margin"
+                    android:hint="@string/First_Name"
+                    android:inputType="textPersonName"
+                    android:text="Yash Gupta"
+                    android:textSize="14sp"
+                    app:btextfont="@string/RobotoCondensed" />
+
+                <com.custom.BEditText
+                    android:id="@+id/lastname1"
+                    style="@style/EditTextStyle_Style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_bottom"
+                    android:layout_marginLeft="@dimen/button_margin"
+                    android:layout_marginRight="@dimen/button_margin"
+                    android:gravity="center"
+                    android:hint="@string/Last_Name"
+                    android:inputType="textPersonName"
+                    android:textSize="14sp"
+                    app:btextfont="@string/RobotoCondensed" />
+
+                <!--<EditText-->
+                <!--android:id="@+id/emailadd"-->
+                <!--style="@style/EditTextStyle_Style"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginBottom="@dimen/margin_bottom"-->
+                <!--android:layout_marginLeft="@dimen/button_margin"-->
+                <!--android:layout_marginRight="@dimen/button_margin"-->
+                <!--android:hint="@string/Email"-->
+                <!--android:inputType="textPersonName"-->
+                <!--android:maxLines="1" />-->
+
+                <com.custom.BEditText
+                    android:id="@+id/et_mobile"
+                    style="@style/EditTextStyle_Style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/button_margin"
+                    android:layout_marginRight="@dimen/button_margin"
+                    android:hint="@string/phone"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:textSize="14sp"
+                    app:btextfont="@string/RobotoCondensed" />
+
+                <!--<LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="@dimen/button_margin"
+                    android:layout_marginLeft="@dimen/button_margin"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Change Password"
+                        android:textAllCaps="true"
+                        android:textColor="@color/text_color_black"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <Switch
+                        android:id="@+id/switch_chng_pswd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="0dp"
+                        android:textColor="#ffffff"
+                        android:textOff=""
+                        android:textOn=""
+                        android:padding="0dp"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/abailable_button_selector"
+                        android:thumb="@drawable/customswitchselector"
+                        android:track="@drawable/custom_track"
+                        android:checked="false"
+
+                        />
+
+                </LinearLayout>-->
+                <RelativeLayout
+                    android:id="@+id/relative_chng_pswd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/button_margin"
+                    android:layout_marginRight="@dimen/button_margin"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <com.custom.BTextView
+                        app:btextfont="@string/RobotoCondensed"
+                        android:id="@+id/tv_change_pswd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/change_password"
+                        android:textAllCaps="false"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@color/bt_black" />
+
+                    <Switch
+                        android:id="@+id/switch_chng_pswd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="right"
+                        android:background="@drawable/abailable_button_selector"
+                        android:checked="false"
+                        android:padding="0dp"
+                        android:textColor="#ffffff"
+                        android:textOff=""
+                        android:textOn=""
+                        android:thumb="@drawable/customswitchselector"
+                        android:track="@drawable/custom_track" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_change_pswd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="60dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <com.custom.BEditText
+                        app:btextfont="@string/RobotoCondensed"
+                        android:id="@+id/et_old_pswd1"
+                        style="@style/EditTextStyle_Style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_bottom"
+                        android:layout_marginLeft="@dimen/button_margin"
+                        android:layout_marginRight="@dimen/button_margin"
+                        android:gravity="center"
+                        android:textSize="14sp"
+                        android:hint="@string/Old_Password"
+                        android:inputType="textPassword" />
+
+                    <com.custom.BEditText
+                        app:btextfont="@string/RobotoCondensed"
+                        android:id="@+id/et_new_pswd1"
+                        style="@style/EditTextStyle_Style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:layout_marginBottom="@dimen/margin_bottom"
+                        android:layout_marginLeft="@dimen/button_margin"
+                        android:layout_marginRight="@dimen/button_margin"
+                        android:hint="@string/New_Password"
+                        android:inputType="textPassword" />
+
+                    <com.custom.BEditText
+                        app:btextfont="@string/RobotoCondensed"
+                        android:id="@+id/et_confirm_pswd1"
+                        style="@style/EditTextStyle_Style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="30dp"
+                        android:layout_marginLeft="@dimen/button_margin"
+                        android:layout_marginRight="@dimen/button_margin"
+                        android:gravity="center"
+                        android:textSize="14sp"
+                        android:hint="@string/Confirm_password"
+                        android:inputType="textPassword" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp">
+
+                <com.github.siyamed.shapeimageview.CircularImageView
+                    android:id="@+id/profileimagezoom"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:background="@drawable/circleuser"
+                    map:siBorderColor="@color/blue_color"
+                    map:siBorderWidth="2dp" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignBottom="@+id/profileimagezoom"
+                    android:layout_alignRight="@+id/profileimagezoom"
+                    android:src="@drawable/plus" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.custom.BButton
+        android:id="@+id/btn_change"
+        android:background="@color/yellow_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/save"
+        app:btextfont="@string/RobotoCondensed"
+        android:textAllCaps="true" />
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+<LinearLayout
+    android:id="@+id/linear_id"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.custom.BTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:text="@string/why_not"
+        android:textSize="16sp"
+        app:btextfont="@string/RobotoCondensed"
+        android:layout_margin="10dp"
+        android:textColor="@color/blue_color"
+        android:id="@+id/tv_why_not"
+        android:layout_gravity="center_horizontal" />
+
+    <com.custom.BEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_why_not_value"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingTop="20dp"
+        android:textSize="14sp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="20dp"
+        app:btextfont="@string/RobotoCondensed"
+        android:background="@drawable/edittext_box"
+        android:layout_gravity="center_horizontal" />
+
+    <com.custom.BButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ok"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="100dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="10dp"
+        app:btextfont="@string/RobotoCondensed"
+        android:textColor="@color/blue_color"
+        android:paddingBottom="10dp"
+        android:background="@drawable/ok_background"
+        android:id="@+id/ok_button_id"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>
+
+</RelativeLayout>

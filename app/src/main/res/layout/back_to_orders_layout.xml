@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:id="@+id/linear_root_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <com.custom.BTextView
+            android:id="@+id/tv_why_not1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:paddingTop="30dp"
+            app:btextfont="@string/RobotoCondensed"
+            android:text="@string/why_not"
+            android:textSize="16dp"
+            android:textColor="@color/blue_color" />
+
+        <com.custom.BEditText
+            android:id="@+id/et_why_not_value1"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edittext_box"
+            android:maxLines="3"
+            android:textSize="14sp"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            app:btextfont="@string/RobotoCondensed"
+            android:digits="abcdefghijklmnopqrstuvwxyz0123456789 "
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp" />
+
+        <com.custom.BButton
+            android:id="@+id/ok_button_id1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ok_background"
+            android:paddingBottom="10dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:paddingTop="10dp"
+            app:btextfont="@string/RobotoCondensed"
+            android:text="@string/ok"
+            android:textColor="@color/blue_color" />
+
+        <RelativeLayout
+            android:id="@+id/distance_time_set1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone">
+
+            <include layout="@layout/distance_time_layout" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linear_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_root_id"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+
+        <ImageButton
+            android:id="@+id/ib_back_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_back"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_back_to_orders"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:gravity="center"
+            android:text="@string/back_to_orders"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/ib_next_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_next"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/back_to_relative"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/linear_root_id"
+        android:visibility="gone"></RelativeLayout>
+
+</RelativeLayout>

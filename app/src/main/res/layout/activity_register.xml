@@ -1,0 +1,285 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="0dp"
+        tools:context="com.example.arcane.RegisterActivity">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/registerimage"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:alpha="0.25"
+                android:scaleType="fitXY" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/linear_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue_color"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cancel"
+                style="@style/Back_button_Style"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true" />
+
+            <com.custom.BTextView
+                android:id="@+id/CREATEANACCOUNT"
+                style="@style/Header_Style"
+                app:btextfont="@string/RobotoCondensed"
+                android:layout_centerHorizontal="true"
+                android:text="@string/join_us" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="30dp"
+            android:layout_alignParentStart="true">
+
+            <RelativeLayout
+                android:id="@+id/relative_one"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top">
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/facebookbn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="405dp"
+                android:weightSum="2">
+
+
+                <Button
+                    android:id="@+id/facebookbns"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout"
+                    android:text="@string/facebook"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+
+                <Button
+                    android:id="@+id/googleplus"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/layout"
+                    android:text="@string/google"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+
+            <com.custom.BEditText
+                app:btextfont="@string/RobotoCondensed"
+                android:id="@+id/mobile"
+                style="@style/EditTextStyle_Style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/payemail"
+                android:layout_marginLeft="@dimen/button_margin"
+                android:layout_marginRight="@dimen/button_margin"
+                android:layout_marginTop="7dp"
+                android:hint="@string/phone"
+                android:textSize="14sp"
+                android:inputType="phone"
+                android:maxLength="12" />
+
+            <com.custom.BEditText
+                app:btextfont="@string/RobotoCondensed"
+                android:id="@+id/payemail"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@+id/email"
+                android:layout_alignRight="@+id/email"
+                android:layout_below="@+id/email"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/sl30"
+                android:ems="10"
+                android:hint="@string/PayPal_Email"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="55dp"
+                android:paddingRight="45dp"
+                android:src="@drawable/txt"
+                android:textColor="#fff"
+                android:textColorHint="#e6e6e6"
+                android:visibility="gone" />
+
+            <com.custom.BEditText
+                app:btextfont="@string/RobotoCondensed"
+                android:id="@+id/password"
+                style="@style/EditTextStyle_Style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mobile"
+                android:layout_marginLeft="@dimen/button_margin"
+                android:layout_marginRight="@dimen/button_margin"
+                android:layout_marginTop="7dp"
+                android:hint="@string/password"
+                android:textSize="14sp"
+                android:inputType="textPassword" />
+
+            <com.custom.BEditText
+                app:btextfont="@string/RobotoCondensed"
+                android:id="@+id/repassword"
+                style="@style/EditTextStyle_Style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/password"
+                android:layout_marginLeft="@dimen/button_margin"
+                android:layout_marginRight="@dimen/button_margin"
+                android:layout_marginTop="7dp"
+                android:textSize="14sp"
+                android:hint="@string/repassword"
+                android:inputType="textPassword" />
+
+            <com.custom.BButton
+                app:btextfont="@string/RobotoCondensed"
+                android:id="@+id/next"
+                android:background="@color/yellow_color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/blue_color"
+                android:text="@string/join" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="300dp"
+                android:layout_marginTop="70dp"
+                android:src="@drawable/paypalred1"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_alignLeft="@+id/facebookbn"
+                android:layout_alignRight="@+id/facebookbn"
+                android:layout_below="@+id/facebookbn"
+                android:visibility="gone" />
+
+            <com.custom.BEditText
+                app:btextfont="@string/RobotoCondensed"
+                android:id="@+id/first_name"
+                style="@style/EditTextStyle_Style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relative_one"
+                android:layout_marginLeft="@dimen/button_margin"
+                android:layout_marginRight="@dimen/button_margin"
+                android:layout_marginTop="10dp"
+                android:hint="@string/fname"
+                android:textSize="14sp"
+                android:inputType="textEmailAddress">
+
+            </com.custom.BEditText>
+
+            <com.custom.BEditText
+                app:btextfont="@string/RobotoCondensed"
+                android:id="@+id/last_name"
+                android:textSize="14sp"
+                style="@style/EditTextStyle_Style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/first_name"
+                android:layout_marginLeft="@dimen/button_margin"
+                android:layout_marginRight="@dimen/button_margin"
+                android:layout_marginTop="7dp"
+                android:hint="@string/lname"
+                android:inputType="textEmailAddress"/>
+
+            <com.custom.BEditText
+                app:btextfont="@string/RobotoCondensed"
+                android:id="@+id/email"
+                style="@style/EditTextStyle_Style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/last_name"
+                android:layout_marginLeft="@dimen/button_margin"
+                android:layout_marginRight="@dimen/button_margin"
+                android:layout_marginTop="7dp"
+                android:hint="@string/email"
+                android:textSize="14sp"
+                android:inputType="textEmailAddress" />
+
+            <Button
+                android:id="@+id/signinlink"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/password"
+                android:layout_marginTop="70dp"
+                android:background="@null"
+                android:text="@string/sign_in"
+                android:textColor="#fff"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:layout_alignEnd="@+id/facebookbn"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/facebookbn"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp">
+
+                <TextView
+                    android:id="@+id/msg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/email_id_and_mobilenumber_to_send_ride"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>

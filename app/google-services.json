@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "806965885175",
+    "firebase_url": "https://hiremedriver-6b198.firebaseio.com",
+    "project_id": "hiremedriver-6b198",
+    "storage_bucket": "hiremedriver-6b198.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:806965885175:android:99d077b58e31c302",
+        "android_client_info": {
+          "package_name": "com.driver.hire_me"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "806965885175-r8ii28j1k596v5d2gu10u0lsgs4kcnic.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPGhY3A19uTeldACHVm4wtgOojiS3NH_U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

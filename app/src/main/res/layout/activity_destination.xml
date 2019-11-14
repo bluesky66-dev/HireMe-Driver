@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="wrap_content">
+
+    <com.custom.BTextView
+        android:id="@+id/v_reached_destination"
+        android:layout_marginTop="20dp"
+        app:btextfont="@string/RobotoCondensed"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:text="@string/client_reached_destination"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_height="wrap_content" />
+    <com.custom.BButton
+        app:btextfont="@string/RobotoCondensed"
+        android:id="@+id/ad_bt_yes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/blue_color"
+        android:background="@color/yellow_color"
+        android:text="@string/yes"/>
+
+    <com.custom.BButton
+        app:btextfont="@string/RobotoCondensed"
+        android:id="@+id/ad_bt_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@color/light_gray2"
+        android:layout_marginBottom="60dp"
+        android:textColor="@color/blue_color"
+        android:text="@string/no"/>
+
+    <LinearLayout
+        android:id="@+id/linear_destination"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="0dp"
+        android:visibility="gone"
+        android:layout_below="@+id/linear_root_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/ib_back_arrow"
+            android:background="@drawable/icon_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_back_to_orders"
+            android:layout_width="0dp"
+            android:text="@string/back_to_orders"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/ib_next_arrow"
+            android:background="@drawable/icon_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</LinearLayout>

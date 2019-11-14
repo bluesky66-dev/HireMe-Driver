@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background">
+
+    <!-- <pl.droidsonroids.gif.GifTextView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:drawableStart="@drawable/last_red_driver"
+         android:background="@drawable/last_red_driver"
+         android:id="@+id/hmm" />-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#B3ffffff">
+
+        <TextView
+            android:id="@+id/tv_ifyours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_sign_in_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="OR SIGN UP IF YOU'RE"
+            android:textAllCaps="true"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/hint_text_color"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_not_members"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_ifyours"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:text="NOT A MEMEBER"
+            android:textAllCaps="true"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/hint_text_color"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.custom.BTextView
+                android:id="@+id/signin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:padding="5dp"
+                android:textColor="#007AFF"
+                android:text="@string/sign_in" />
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="1dp"
+                android:background="#f3444444">
+
+            </View>
+
+            <com.custom.BTextView
+                app:btextfont="@string/RobotoCondensed"
+                android:id="@+id/register"
+                android:textColor="#007AFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:padding="5dp"
+                android:text="@string/sign_up" />
+
+        </LinearLayout>
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_sign"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginTop="45dp"-->
+            <!--android:drawableTop="@drawable/appicon_driver"-->
+            <!--android:text="@string/app_name"-->
+            <!--android:textAllCaps="false"-->
+            <!--android:textAppearance="?android:textAppearanceLarge"-->
+            <!--android:textColor="@color/blue_color"-->
+            <!--android:textSize="40sp" />-->
+
+        <com.custom.BTextView
+            android:id="@+id/tv_signIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_in"
+            android:textSize="40sp"
+            android:textColor="@color/bt_black"
+            android:layout_marginBottom="20dp"
+            app:btextfont="@string/RobotoCondensed"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="190dp"/>
+
+        <com.custom.BTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#f3444444"
+            android:textSize="16sp"
+            app:btextfont="@string/RobotoCondensed"
+            android:text="@string/or_sign_up_if_you_re_not_a_member"
+            android:layout_below="@+id/tv_signIn"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>

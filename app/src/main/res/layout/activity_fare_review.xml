@@ -1,0 +1,400 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg">
+
+    <!--         android:background="@drawable/register"
+     -->
+    <RelativeLayout
+        android:id="@+id/relative_root_one_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_color"
+        android:paddingBottom="0dp">
+
+        <Button
+            android:id="@+id/cancelfarereview"
+            style="@style/Back_button_Style"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp" />
+
+        <com.custom.BTextView
+            android:id="@+id/farereview"
+            style="@style/Header_Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/Fare_Summary"
+            android:textAllCaps="true"
+            android:visibility="visible"
+            app:btextfont="@string/RobotoCondensed" />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relative_root_one_id"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/pickup8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <TextView
+                    android:id="@+id/tripidtext"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Trip_id"
+                    android:textColor="@color/text_color_blue1"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/tripid"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:textColor="#000000">
+
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pickup9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pickup8"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <TextView
+                    android:id="@+id/driveridtext"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Driver_ID"
+                    android:textColor="@color/text_color_blue1"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/driverid"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:textColor="#000000">
+
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pickup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pickup9"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <TextView
+                    android:id="@+id/pickuptext"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Pickup_Location"
+                    android:textColor="@color/text_color_blue1"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/pickuploc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:textColor="#000000">
+
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pickup1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pickup"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <TextView
+                    android:id="@+id/droptext"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Drop_Location"
+                    android:textColor="@color/text_color_blue1"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/droploc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:textColor="#000000">
+
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pickup2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pickup1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/datetext"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Date_Time"
+                    android:textColor="@color/text_color_blue1"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:textColor="#000000">
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pickup3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pickup2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Total_Distance"
+                    android:textColor="@color/text_color_blue1"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/distance"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:textColor="#000000">
+
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pickup4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pickup3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <TextView
+                    android:id="@+id/chargetext"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Charge"
+                    android:textColor="@color/text_color_blue1"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/charge"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:textColor="#000000">
+
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pickup5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pickup4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="2">
+
+
+                <TextView
+                    android:id="@+id/waittext"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Waiting_Charge"
+                    android:textColor="@color/text_color_blue1"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/wait"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:textColor="#000000">
+
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pickup6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pickup5"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="2">
+
+
+                <TextView
+                    android:id="@+id/taxtext"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Tax"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/tax"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:textColor="#000000">
+
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pickup7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pickup6"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <TextView
+                    android:id="@+id/totaltext"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/Total"
+                    android:textColor="@color/text_color_blue1"
+                    android:textSize="15dp" />
+
+                <EditText
+                    android:id="@+id/total"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:textColor="#000000">
+
+                </EditText>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

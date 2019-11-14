@@ -1,0 +1,153 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".SignUpActivity">
+
+    <TextView
+        android:id="@+id/verifyprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/theme"
+        android:gravity="center"
+        android:text="@string/VERIFY_PROFILE"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#fff"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/cancelsu"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/verifyprofile"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/arrowback" />
+
+    <!--<ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="200dp"
+        android:layout_height="13dp"
+        android:layout_alignLeft="@+id/cancelsu"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/verifyprofile"
+        android:background="@drawable/shadow" />-->
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/cancelsu"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#F5FFFA">
+
+            <EditText
+                android:id="@+id/lastname"
+                android:layout_width="170dp"
+                android:layout_height="40dp"
+                android:layout_alignBaseline="@+id/firstname"
+                android:layout_alignBottom="@+id/firstname"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="25dp"
+                android:layout_toRightOf="@+id/firstname"
+                android:background="#ffe5e5"
+                android:ems="10"
+                android:hint="@string/Last_Name"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+
+            <EditText
+                android:id="@+id/emailadd"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@+id/firstname"
+                android:layout_alignRight="@+id/lastname"
+                android:layout_below="@+id/lastname"
+                android:layout_marginTop="10dp"
+                android:background="#ffe5e5"
+                android:ems="10"
+                android:hint="@string/Email_Address"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <EditText
+                android:id="@+id/payemailadd"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@+id/emailadd"
+                android:layout_alignRight="@+id/emailadd"
+                android:layout_below="@+id/emailadd"
+                android:layout_marginTop="10dp"
+                android:background="#ffe5e5"
+
+                android:ems="10"
+                android:hint="@string/paypal_Email_Address"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <EditText
+                android:id="@+id/mobileno"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@+id/payemailadd"
+                android:layout_alignRight="@+id/payemailadd"
+                android:layout_below="@+id/payemailadd"
+                android:layout_marginTop="10dp"
+                android:background="#ffe5e5"
+                android:digits="0123456789"
+                android:ems="10"
+                android:hint="@string/Mobile_Number"
+                android:inputType="phone"
+                android:maxLength="15"
+                android:paddingLeft="10dp"
+                android:paddingRight="35dp"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/nextsu"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/mobileno"
+                android:layout_alignRight="@+id/mobileno"
+                android:layout_below="@+id/mobileno"
+                android:layout_marginTop="43dp"
+                android:background="@color/theme"
+                android:text="@string/NEXT"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/firstname"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"
+                android:background="#ffe5e5"
+                android:ems="10"
+                android:hint="@string/First_Name"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

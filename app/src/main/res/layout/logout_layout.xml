@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/linear_main_id"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_dialog"
+        android:layout_width="280dp"
+        android:paddingBottom="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_height="wrap_content">
+
+        <com.custom.BTextView
+            android:id="@+id/tv_dialog_title"
+            android:text="@string/do_you_want_to_exit_now"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            app:btextfont="@string/RobotoCondensed"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <View
+            android:background="#cfcfcf"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:id="@+id/linear_child_id"
+            android:orientation="horizontal"
+            android:layout_weight="2"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content">
+
+        <com.custom.BButton
+            android:id="@+id/yes_btn"
+            android:layout_weight="1"
+            android:text="@string/yes"
+            app:btextfont="@string/RobotoCondensed"
+            android:textColor="@color/text_color_black"
+            android:background="#00ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+            <View
+                android:background="#cfcfcf"
+                android:layout_width="1dp"
+                android:layout_height="match_parent">
+            </View>
+
+            <com.custom.BButton
+                android:id="@+id/no_btn"
+                android:text="@string/no"
+                app:btextfont="@string/RobotoCondensed"
+                android:layout_weight="1"
+                android:background="#00ffffff"
+                android:textColor="@color/text_color_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

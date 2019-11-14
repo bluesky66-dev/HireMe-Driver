@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/tv_time_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:text="16 min"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/blue_color"
+        android:textSize="@dimen/medium_text_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_time_key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/blue_color"
+        android:textSize="@dimen/medium_text_size" />
+
+    <TextView
+        android:id="@+id/tv_dot_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical"
+        android:text="@string/dot"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#898888"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_distance_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5.50 Km"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black_dark"
+        android:textSize="@dimen/medium_text_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_distance_key"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black_light"
+        android:textSize="@dimen/medium_text_size" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical"
+        android:text="@string/dot"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#898888"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_cu_time_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black_dark"
+        android:textSize="@dimen/medium_text_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_am_pm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="@string/am"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black_dark"
+        android:textSize="@dimen/medium_text_size"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_eta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black_light"
+        android:textSize="@dimen/medium_text_size" />
+
+</LinearLayout>

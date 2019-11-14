@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:layout_height="wrap_content">
+
+    <com.custom.BTextView
+        app:btextfont="@string/buttom_fonts"
+        android:id="@+id/tv_client_picked_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/client_picked_up"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/blue_color" />
+
+    <com.custom.BButton
+        android:id="@+id/btn_yes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        app:btextfont="@string/RobotoCondensed"
+        android:layout_marginTop="30dp"
+        android:background="@color/yellow_color"
+        android:textColor="@color/blue_color"
+        android:text="@string/yes"/>
+
+    <com.custom.BButton
+        android:id="@+id/btn_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="60dp"
+        app:btextfont="@string/RobotoCondensed"
+        android:background="@color/grey_color"
+        android:textColor="@color/blue_color"
+        android:text="@string/no"/>
+
+    <!--<LinearLayout
+        android:id="@+id/linear_destination"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="0dp"
+        android:layout_below="@+id/linear_root_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageButton
+            android:id="@+id/ib_back_arrow"
+            android:background="@drawable/icon_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_back_to_orders"
+            android:layout_width="0dp"
+            android:text="Back to orders "
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            />
+        <ImageButton
+            android:id="@+id/ib_next_arrow"
+            android:background="@drawable/icon_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>-->
+</LinearLayout>
